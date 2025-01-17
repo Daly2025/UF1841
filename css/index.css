@@ -1,0 +1,186 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: url('img/logo.png') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #d3d3d3; /* Color de fondo gris claro */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(183, 148, 134, 0.8); /* Fondo semitransparente */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+header .logo {
+    width: 100px; /* Ajusta el tamaño del logo según lo necesites */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    color: #ffeb3b; /* Color amarillo para el título */
+    margin: 0;
+}
+
+nav {
+    background-color: rgba(217, 204, 198, 0.8); /* Fondo semitransparente */
+    padding: 10px 0;
+    text-align: center; /* Centra los elementos del menú de navegación */
+    width: 100%; /* Asegura que el nav ocupe todo el ancho */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos del menú de navegación */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #321ee9; /* Color rosa para los enlaces del menú */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(235, 187, 187, 0.24); /* Fondo semitransparente */
+    border: 2px solid #000; /* Bordes para encuadrar las secciones */
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section h3 {
+    color: #3f51b5; /* Color azul para los encabezados de sección */
+}
+
+section p {
+    color: #4caf50; /* Color verde para los párrafos */
+}
+
+section button {
+    background-color: #e91e63; /* Color rosa para el botón */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.aside {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(173, 167, 167, 0.8); /* Fondo semitransparente */
+    border: 2px solid #000; /* Bordes para encuadrar las secciones */
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    float: right; /* Alinear a la derecha */
+    width: 250px; /* Ancho del recuadro */
+}
+
+.imagenes .galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.galeria-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.galeria-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.galeria-item img {
+    width: 150px; /* Ajusta el tamaño según lo necesites */
+    height: 150px; /* Asegura que todas las imágenes tengan la misma altura */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.caption {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px; /* Ajusta el ancho según el tamaño de la imagen */
+    font-size: 12px;
+}
+
+footer {
+    background-color: rgba(183, 148, 134, 0.8); /* Fondo semitransparente */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .copy {
+    display: block;
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 100px; /* Ajusta esto según la posición vertical que desees */
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar .box {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #d3d3d3; /* Color gris */
+}
+
+.sidebar .box p {
+    margin: 0;
+}
+
+.sidebar .box .lorem {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar .box .lorem li::before {
+    content: '• ';
+    color: black;
+}
+
+.sidebar .box textarea {
+    width: 100%;
+    height: 100px; /* Ajusta la altura según lo necesites */
+}
+
